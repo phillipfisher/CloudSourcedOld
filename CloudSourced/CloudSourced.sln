@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudSourced.Common", "CloudSourced.Common\CloudSourced.Common.csproj", "{9EC81C00-D246-4228-AE84-5290089F1238}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actors", "Actors", "{3026CC1B-5102-413F-977F-457665AD17F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{D1F2088F-FBB7-4A9B-B6CB-E6DA04A198B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{C3CE4D5C-B953-4F37-B395-435E4DBE7A6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudSourced", "CloudSourced\CloudSourced.csproj", "{9D593D5E-1FD4-485F-B984-704B91422A5B}"
+EndProject
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "CloudSourcedApp", "CloudSourcedApp\CloudSourcedApp.sfproj", "{29D4E0A3-1205-4CD1-95FF-7C1F1DEAC1E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EC81C00-D246-4228-AE84-5290089F1238}.Debug|x64.ActiveCfg = Debug|x64
+		{9EC81C00-D246-4228-AE84-5290089F1238}.Debug|x64.Build.0 = Debug|x64
+		{9EC81C00-D246-4228-AE84-5290089F1238}.Release|x64.ActiveCfg = Release|x64
+		{9EC81C00-D246-4228-AE84-5290089F1238}.Release|x64.Build.0 = Release|x64
+		{9D593D5E-1FD4-485F-B984-704B91422A5B}.Debug|x64.ActiveCfg = Debug|x64
+		{9D593D5E-1FD4-485F-B984-704B91422A5B}.Debug|x64.Build.0 = Debug|x64
+		{9D593D5E-1FD4-485F-B984-704B91422A5B}.Release|x64.ActiveCfg = Release|x64
+		{9D593D5E-1FD4-485F-B984-704B91422A5B}.Release|x64.Build.0 = Release|x64
+		{29D4E0A3-1205-4CD1-95FF-7C1F1DEAC1E4}.Debug|x64.ActiveCfg = Debug|x64
+		{29D4E0A3-1205-4CD1-95FF-7C1F1DEAC1E4}.Debug|x64.Build.0 = Debug|x64
+		{29D4E0A3-1205-4CD1-95FF-7C1F1DEAC1E4}.Debug|x64.Deploy.0 = Debug|x64
+		{29D4E0A3-1205-4CD1-95FF-7C1F1DEAC1E4}.Release|x64.ActiveCfg = Release|x64
+		{29D4E0A3-1205-4CD1-95FF-7C1F1DEAC1E4}.Release|x64.Build.0 = Release|x64
+		{29D4E0A3-1205-4CD1-95FF-7C1F1DEAC1E4}.Release|x64.Deploy.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9EC81C00-D246-4228-AE84-5290089F1238} = {C3CE4D5C-B953-4F37-B395-435E4DBE7A6F}
+		{9D593D5E-1FD4-485F-B984-704B91422A5B} = {3026CC1B-5102-413F-977F-457665AD17F2}
+		{29D4E0A3-1205-4CD1-95FF-7C1F1DEAC1E4} = {D1F2088F-FBB7-4A9B-B6CB-E6DA04A198B6}
+	EndGlobalSection
+EndGlobal
