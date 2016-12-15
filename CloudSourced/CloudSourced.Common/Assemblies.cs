@@ -6,7 +6,7 @@ using System.Reflection;
 
 namespace CloudSourced
 {
-    public class Assemblies : IEnumerable<Assembly>
+    internal class Assemblies : IEnumerable<Assembly>
     {
         List<Assembly> assemblies = new List<Assembly>();
 

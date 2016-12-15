@@ -1,5 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
+using System.Reflection;
 using System.Runtime.Serialization;
 
 namespace CloudSourced
@@ -21,11 +23,12 @@ namespace CloudSourced
             EventString = eventString;
         }
 
-        public object ConvertEventToObject(Assemblies assemblies)
+        public object ConvertEventToObject(params Assembly[] assemblies)
         {
             try
             {
-                Type t = assemblies.GetType(EventType, true);
+                Assemblies a = new Assemblies(assemblies);
+                Type t = a.GetType(EventType, true);
                 return JsonConvert.DeserializeObject(EventString, t);
             }
             catch
