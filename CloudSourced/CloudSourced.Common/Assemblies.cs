@@ -6,7 +6,7 @@ using System.Reflection;
 
 namespace CloudSourced
 {
-    internal class Assemblies : IEnumerable<Assembly>
+    public class Assemblies : IEnumerable<Assembly>
     {
         List<Assembly> assemblies = new List<Assembly>();
 
@@ -91,6 +91,11 @@ namespace CloudSourced
         public IEnumerable<KeyValuePair<Type, IEnumerable<A>>> GetTypesWithAttribute<A>() where A : Attribute
         {
             return GetTypes().Select(t => new KeyValuePair<Type, IEnumerable<A>>(t, t.GetCustomAttributes(typeof(A), true).Where(o => o is A).Select(o => o as A))).Where(kv => kv.Value.Count() > 0);
+        }
+
+        public static implicit operator Assembly[] (Assemblies a)
+        {
+            return a.assemblies.ToArray();
         }
     }
 }
