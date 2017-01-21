@@ -10,8 +10,8 @@ namespace CloudSourced.Actors
 {
     public static class Clients
     {
-        public readonly static Uri CommandUri = new Uri("fabric:/CloudSourcedApp/CommandActorService");
-        public readonly static Uri EventUri = new Uri("fabric:/CloudSourcedApp/EventActorService");
+        public readonly static Uri CommandUri = new Uri("fabric:/CloudSourced/CommandActorService");
+        public readonly static Uri EventUri = new Uri("fabric:/CloudSourced/EventActorService");
 
         public static ICommandActor CreateCommandActor(string containerName, string domainName, string domainId)
         {
