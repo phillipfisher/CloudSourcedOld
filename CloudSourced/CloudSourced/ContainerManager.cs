@@ -17,6 +17,7 @@ namespace CloudSourced
         public static async Task<CloudBlobContainer> Get(string containerName)
         {
             CloudBlobContainer container = null;
+            containerName = containerName.ToLower();
 
             lock (containers)
             {

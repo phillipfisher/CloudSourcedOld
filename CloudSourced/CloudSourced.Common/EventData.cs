@@ -29,7 +29,12 @@ namespace CloudSourced
             {
                 Assemblies a = new Assemblies(assemblies);
                 Type t = a.GetType(EventType, true);
-                return JsonConvert.DeserializeObject(EventString, t);
+                JsonSerializerSettings settings = new JsonSerializerSettings
+                {
+                    ConstructorHandling = ConstructorHandling.AllowNonPublicDefaultConstructor
+                };
+
+                return JsonConvert.DeserializeObject(EventString, t, settings);
             }
             catch
             {
