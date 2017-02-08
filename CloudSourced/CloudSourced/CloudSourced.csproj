@@ -121,9 +121,6 @@
     <Compile Include="SourcedState.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App.secret.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <None Include="PackageRoot\ServiceManifest.xml" />
     <None Include="PackageRoot\Config\Settings.xml" />
     <None Include="App.config" />
