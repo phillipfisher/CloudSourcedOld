@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>CloudSourced.Common</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>phillipfisher</authors>
+    <owners>phillipfisher</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>CloudSourced client library</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>cloud event sourcing</tags>
+  </metadata>
+</package>

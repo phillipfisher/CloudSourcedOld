@@ -95,6 +95,7 @@
     <Compile Include="RecordContainer.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="CloudSourced.Common.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
